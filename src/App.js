@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
+import Navigation from './components/navigation/navigation.js';
+import Content from './components/content/content.js';
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <h1>stocks-app</h1>
+      <div id="app">
+        <Navigation/>
       </div>
     );
   }
