@@ -113,3 +113,17 @@ nav .dropdown:hover .dropdown-arrow {
     text-decoration: underline;
     color: green;
 }
+
+#mobile-nav {
+    display: none;
+}
+
+@media only screen and (max-width: 940px) {
+    #wide-nav {
+        display: none;
+    }
+
+    #mobile-nav {
+        display: block;
+    }
+}

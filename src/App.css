@@ -1,3 +1,13 @@
 body {
+    background-color: lightyellow;
+}
+
+.content-container {
     background-color: white;
+    margin: 20px;
+    padding: 5px;
+}
+
+.content-seperator {
+    width: 98%;
 }
