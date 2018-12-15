@@ -8,6 +8,9 @@ nav {
     box-shadow: 0 7px 6px -6px #999;
 
     position: relative;
+
+    /* make navbar the most front facing thing */
+    z-index: 1;
 }
 
 nav .logo {

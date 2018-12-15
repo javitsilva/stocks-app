@@ -1,0 +1,16 @@
+.most-active-highlights-container {
+    position: relative;
+
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.most-active-highlight {
+    display: inline-block;
+    background-color: gray;
+    height: 50px;
+    width: 100px;
+    margin: 0px 5px;
+}
