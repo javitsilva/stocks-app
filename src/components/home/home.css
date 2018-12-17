@@ -1,3 +1,8 @@
 .section-header {
     color: green;
 }
+
+.home-highlight-container {
+    position: relative;
+    text-align: center;
+}

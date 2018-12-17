@@ -9,7 +9,7 @@ nav {
 
     position: relative;
 
-    /* make navbar the most front facing thing */
+    /* make navbar highest z-index to be the most front facing thing */
     z-index: 1;
 }
 

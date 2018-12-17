@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 class SectorHighlights extends React.Component {
 
   static propTypes = {
-    sectorHighlights: PropTypes.array.isRequired
+    highlights: PropTypes.array.isRequired
   }
 
   constructor(props) {
@@ -17,8 +17,8 @@ class SectorHighlights extends React.Component {
   }
 
   componentWillMount() {
-    let best = _.maxBy(this.props.sectorHighlights, r => r.performance);
-    let worst = _.minBy(this.props.sectorHighlights, r => r.performance);
+    let best = _.maxBy(this.props.highlights, r => r.performance);
+    let worst = _.minBy(this.props.highlights, r => r.performance);
 
     let highlights = [];
 
