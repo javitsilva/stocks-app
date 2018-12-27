@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import SectorHighlights from '../sector-highlights/sector-highlights.js';
-import MostActiveHighlights from '../most-active-highlights/most-active-highlights.js';
+import SectorHighlights from './highlights/sector-highlights/sector-highlights.js';
+import MostActiveHighlights from './highlights/most-active-highlights/most-active-highlights.js';
 
 class HomeHighlight extends React.Component {
   static propTypes = {

@@ -33,7 +33,7 @@ class Home extends React.Component {
         lastUpdated = new Date();
       } else {
         lastUpdated = new Date(0);
-        lastUpdated.setMilliseconds(_.maxBy(results, r => r.lastUpdated).lastUpdated);        
+        lastUpdated.setMilliseconds(_.maxBy(results, r => r.latestUpdate).latestUpdate);        
       }
 
       this.mostActiveHighlightsLastUpdatedTimestamp = lastUpdated.toLocaleString();
