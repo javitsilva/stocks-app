@@ -9,10 +9,6 @@ class DivLink extends React.Component {
     href: PropTypes.string.isRequired
   }
 
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     let style = {
         textDecoration: 'none',

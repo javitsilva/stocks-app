@@ -54,25 +54,25 @@ class SectorHighlights extends React.Component {
     this.getBackgroundImageStyleForSector(best.name)
     .then((bestBackgroundImageStyle) => {
       let content = (
-        <div key='best' id='best.name' className='highlight-container' style={bestBackgroundImageStyle}>
+        <div className='highlight-container' style={bestBackgroundImageStyle}>
           <h5>{best.name}</h5>
           <p className='highlight-performance-marker highlight-performance-increased'>{best.performance > 0 ? `+${best.performance}` : best.performance}</p>
         </div>        
       );
       highlights.push(
-        <DivLink content={content} href='/about'/>
+        <DivLink key='best' content={content} href='/about'/>
       );
       return this.getBackgroundImageStyleForSector(worst.name)
     })
     .then((worstBackgroundImageStyle) => {
       let content = (
-        <div key='worst' id='worst.name' className='highlight-container' style={worstBackgroundImageStyle}>
+        <div className='highlight-container' style={worstBackgroundImageStyle}>
           <h5>{worst.name}</h5>
           <p className='highlight-performance-marker highlight-performance-decreased'>{worst.performance}</p>
         </div>
       );
       highlights.push(
-        <DivLink content={content} href='/about'/>
+        <DivLink key='worst' content={content} href='/about'/>
       );
 
       this.setState({
