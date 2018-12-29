@@ -85,12 +85,14 @@ class SectorHighlights extends React.Component {
     return new Promise((res, rej) => {
       let sectorStr = sector.replace(' ', '-');
       sectorStr = sectorStr.toLowerCase();
-      let path = `/images/sectors/${sectorStr}.jpg`;
 
+      let path = `/images/sectors/${sectorStr}.jpg`;
       let img = new Image();
       img.src = path;
-      img.onload = () => { res({backgroundImage: `url(${path})`})};
-      img.onerror = () => { res({backgroundImage: `url(${path.replace('.jpg', '.jpeg')})`}) }; 
+      const sectorImages = require.context(`../../../../../public/images/sectors/`, true);
+      let contextFilePath = `./${sectorStr}.jpg`;
+      img.onload = () => { res({backgroundImage: `url(${sectorImages(contextFilePath)})`})};
+      img.onerror = () => { res({backgroundImage: `url(${sectorImages(contextFilePath.replace('.jpg', '.jpeg'))})`}) }; 
     });
   }
 
