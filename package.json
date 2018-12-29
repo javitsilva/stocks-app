@@ -9,7 +9,7 @@
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.0.4"
   },
-  "hompage": "https://javitsilva.github.io/stocks-app/",
+  "homepage": "https://javitsilva.github.io/stocks-app/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
