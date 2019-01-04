@@ -1,3 +1,19 @@
+.welcome-banner {
+    background-color: green;
+    border-radius: 10px;
+    padding: 5px 5px;
+
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+.welcome-banner > h1 {
+    font-size: 42px;
+    color: yellow;
+    margin: 20px 20px;
+}
+
 .section-header {
     color: green;
 }
