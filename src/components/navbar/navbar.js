@@ -35,7 +35,9 @@ const Navbar = () => {
           <NavLink to="/">$M</NavLink>
         </div>
         <h1 style={{float: 'right', color: 'purple'}}>TODO</h1>
-      </nav>    
+      </nav>  
+
+      <div className='navbar-fixed-reserved-block'></div>  
     </div>
   );  
 }
