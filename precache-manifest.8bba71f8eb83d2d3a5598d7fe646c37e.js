@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/stocks-app/static/media/financials.6dc340ba.jpeg"
   },
   {
-    "revision": "05c02b78fd48e1e7daa9",
+    "revision": "4a8e7be0791dbd70db23",
     "url": "/stocks-app/static/css/main.d367f094.chunk.css"
   },
   {
@@ -28,8 +28,8 @@ self.__precacheManifest = [
     "url": "/stocks-app/static/media/consumer-staples.2253e5f5.jpeg"
   },
   {
-    "revision": "05c02b78fd48e1e7daa9",
-    "url": "/stocks-app/static/js/main.05c02b78.chunk.js"
+    "revision": "4a8e7be0791dbd70db23",
+    "url": "/stocks-app/static/js/main.4a8e7be0.chunk.js"
   },
   {
     "revision": "97f2bc72f7f91cfe5b24fcf762a6b5b1",
@@ -52,7 +52,7 @@ self.__precacheManifest = [
     "url": "/stocks-app/static/media/utilities.c2bef809.jpg"
   },
   {
-    "revision": "61d2b2da51b3abc9dc290b693b676ddc",
+    "revision": "5426d9844859fd5dd95ba05cd696b13a",
     "url": "/stocks-app/index.html"
   }
 ];
