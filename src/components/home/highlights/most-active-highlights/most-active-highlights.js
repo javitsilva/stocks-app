@@ -30,7 +30,7 @@ class MostActiveHighlights extends React.Component {
           <div className='most-active-highlights-column-footer center-div'>
             <h5>{highlight.latestPrice}</h5>
             <p style={highlight.changePercent < 0 ? {color: 'red'} : {color: 'green'}}>
-              {highlight.changePercent < 0 ? '-' : '+'}{highlight.changePercent}
+              {highlight.changePercent < 0 ? '' : '+'}{highlight.changePercent}
             </p>
           </div>
         </div>
