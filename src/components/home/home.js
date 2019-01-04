@@ -73,8 +73,9 @@ class Home extends React.Component {
       <div>
         <Navbar/>
         <div className='content-container'>
-          <h1 style={{fontSize: '42px'}}>Welcome<span><p style={{fontSize: '12px', display: 'inline'}}> - {today.toLocaleDateString()}</p></span></h1>
-          <hr className="content-seperator"/>
+          <div className='welcome-banner'>
+            <h1>Welcome<span><p style={{fontSize: '12px', display: 'inline'}}> - {today.toLocaleDateString()}</p></span></h1>
+          </div>
           <h1 className='section-header'>Most Active</h1>
           <h5>Last Updated: {this.mostActiveHighlightsLastUpdatedTimestamp}</h5>
           <HomeHighlight highlightType='mostActiveHighlights' highlights={this.state.mostActiveHighlights}/>
