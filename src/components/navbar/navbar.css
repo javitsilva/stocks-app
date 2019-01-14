@@ -57,7 +57,7 @@ nav .dropdown {
 
 nav .dropdown-arrow {
     width: 0; 
-    height: 0; 
+    height: 0px; 
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
     
@@ -142,14 +142,10 @@ nav .dropdown:hover .dropdown-arrow {
         bottom: 0px;
     }
 
-    /* #mobile-nav-menu-toggle {
-        float: right;
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-        display: inline-block;
-        margin-right: 20px;
-    } */
+    /* hack but it works */
+    nav .dropdown-menu {
+        top: 47px;
+    }
 
     #mobile-nav-menu-toggle {
         margin-bottom: 10px;
@@ -165,15 +161,12 @@ nav .dropdown:hover .dropdown-arrow {
         cursor: pointer;
         color: green;
     }
-}
 
+    nav .dropdown-menu.show {
+        height: 275px;
+    }
 
-
-
-nav .dropdown-menu.show {
-    height: 275px;
-}
-
-nav .dropdown-menu.hide {
-    height: 0px;
+    nav .dropdown-menu.hide {
+        height: 0px;
+    }
 }

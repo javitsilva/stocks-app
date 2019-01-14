@@ -28,7 +28,7 @@ class DropdownMenu extends React.Component {
 
   toggle() {
     let visible = false;
-    if(this.state.mobileVisible == false)
+    if(this.state.mobileVisible === false)
       visible = true;
 
     this.setState({
